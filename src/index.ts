@@ -1,4 +1,7 @@
 function sendText() {
-    document.getElementById('text').textContent = 'Welcome to my website';
+    const element = document.getElementById('text');
+    if (element){
+        element.textContent = 'Welcome to my website';
+    }
 }
 sendText();

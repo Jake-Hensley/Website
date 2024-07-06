@@ -2,9 +2,11 @@
   "name": "website-ui",
   "version": "1.0.0",
   "description": "Trying to make my first website",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "{}"
+    "build": "tsc && npm run build:cp-public",
+    "build:cp-public": "cp ./public/** ./dist",
+    "type": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
