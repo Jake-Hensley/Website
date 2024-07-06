@@ -1,0 +1,23 @@
+{
+  "name": "website-ui",
+  "version": "1.0.0",
+  "description": "Trying to make my first website",
+  "main": "index.js",
+  "scripts": {
+    "test": "{}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jake-Hensley/Testing.git"
+  },
+  "author": "Jake Hensley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jake-Hensley/Testing/issues"
+  },
+  "homepage": "https://github.com/Jake-Hensley/Testing#readme",
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.5.3"
+  }
+}
