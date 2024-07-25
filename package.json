@@ -2,7 +2,7 @@
   "name": "website-ui",
   "version": "1.0.0",
   "description": "Trying to make my first website",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "build": "tsc && npm run build:cp-public",
     "build:cp-public": "cp ./public/** ./dist",
@@ -20,6 +20,6 @@
   "homepage": "https://github.com/Jake-Hensley/Testing#readme",
   "devDependencies": {
     "tsc": "^2.0.4",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }
