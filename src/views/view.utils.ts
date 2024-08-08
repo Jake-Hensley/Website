@@ -22,6 +22,19 @@ export function makeSpan(text: string) {
     return span;
 }
 
+export function renderView(view: HTMLElement) {
+    const wrapper = clearMainWrapper();
+    wrapper?.appendChild(view);
+}
+
+function clearMainWrapper() {
+    const wrapper = document.getElementById("section-content");
+    wrapper?.childNodes.forEach((childNode) => {
+        wrapper.removeChild(childNode);
+
+    });
+    return wrapper;
+}
 
 /* basic view creator
 export function makeAboutView() {
