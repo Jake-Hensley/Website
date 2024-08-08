@@ -9,5 +9,7 @@ function init() {
 
     const homeView = makeHomeView();
     renderView(homeView);
+
+    
 }
 init();
