@@ -28,11 +28,4 @@ function clearMainWrapper() {
     });
     return wrapper;
 }
-/* basic view creator
-export function makeAboutView() {
-    const view = document.createElement('div');
-    view.appendChild(...);
-    return view;
-}
-*/
 //# sourceMappingURL=view.utils.js.map
