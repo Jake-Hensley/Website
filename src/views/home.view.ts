@@ -1,4 +1,4 @@
-import { makeParagraph } from "../views/view.utils.js";
+import { makeParagraph } from "./view.utils.js";
 
 export function makeHomeView() {
     const view = document.createElement("div");
