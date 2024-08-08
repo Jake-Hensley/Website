@@ -1,12 +1,15 @@
 import { makeAboutView } from "./about.view.js";
+import { makeAuthorView } from "./author.view.js";
 import { makeHomeView } from "./home.view.js";
 import { renderView } from "./view.utils.js";
 
 type NavItem = [label: string, viewFn: Function];
 
+//array of different pages
 const NAV_ITEMS: NavItem[] = [
     ["Home", makeHomeView],
-    ["About", makeAboutView]
+    ["About", makeAboutView],
+    ["Author", makeAuthorView]
 ];
 
 export function makeNavView() {
