@@ -1,4 +1,4 @@
-import { makeLink, makeParagraph, makeSpan } from "./view.utils";
+import { makeLink, makeParagraph, makeSpan } from "./view.utils.js";
 
 const paragraph1 = [
     makeSpan("This website is being developed using "),

@@ -1,5 +1,3 @@
-
-
 export function makeParagraph(text = "") {
     const paragraph = document.createElement('p');
     paragraph.textContent = text;
