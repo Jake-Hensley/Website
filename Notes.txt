@@ -1,15 +1,15 @@
 Github flow: 
-1.  git add .
-2.  git commit "branch-name" message
-3.  git push
+    git add .
+    git commit -am "message"
+    git push
 
 To compile type script: 
     npm run build
 
 Basic view creator:
 
-export function makeView() {
-    const view = document.createElement('div');
-    view.appendChild(...);
-    return view;
-}
+    export function makeView() {
+        const view = document.createElement('div');
+        view.appendChild(...);
+        return view;
+    }
