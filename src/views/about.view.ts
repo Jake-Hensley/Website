@@ -1,7 +1,7 @@
 import { makeLink, makeParagraph, makeSpan } from "./view.utils";
 
 const paragraph1 = [
-    makeSpan("This website is being developed using ");
+    makeSpan("This website is being developed using "),
     makeLink("https://medium.com/swlh/refactoring-a-static-html-site-into-typescript-part-1-of-2-the-content-b4c975ecab00", "this"),
     makeSpan(" article written by Prof. Simon Lutterbie."),
 ];
