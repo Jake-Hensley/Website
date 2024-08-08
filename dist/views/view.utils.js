@@ -3,8 +3,7 @@ export function makeParagraph(text = "") {
     paragraph.textContent = text;
     return paragraph;
 }
-
-export function makeLink(href: string, label: string, newTab = false) {
+export function makeLink(href, label, newTab = false) {
     const link = document.createElement("a");
     link.setAttribute("href", href);
     link.textContent = label;
@@ -13,23 +12,27 @@ export function makeLink(href: string, label: string, newTab = false) {
     }
     return link;
 }
-
-export function makeSpan(text: string) {
+export function makeSpan(text) {
     const span = document.createElement("span");
     span.textContent = text;
     return span;
 }
-
-export function renderView(view: HTMLElement) {
+export function renderView(view) {
     const wrapper = clearMainWrapper();
-    wrapper?.appendChild(view);
+    wrapper === null || wrapper === void 0 ? void 0 : wrapper.appendChild(view);
 }
-
 function clearMainWrapper() {
     const wrapper = document.getElementById("section-content");
-    wrapper?.childNodes.forEach((childNode) => {
+    wrapper === null || wrapper === void 0 ? void 0 : wrapper.childNodes.forEach((childNode) => {
         wrapper.removeChild(childNode);
-
     });
     return wrapper;
 }
+/* basic view creator
+export function makeAboutView() {
+    const view = document.createElement('div');
+    view.appendChild(...);
+    return view;
+}
+*/
+//# sourceMappingURL=view.utils.js.map

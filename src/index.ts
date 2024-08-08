@@ -1,7 +1,8 @@
-function sendText() {
-    const element = document.getElementById("text");
-    if (element){
-        element.textContent = "Welcome to my website";
-    }
+import { makeHomeView } from "./views/home.view.js";
+import { renderView } from "./views/view.utils.js";
+
+function init() {
+    const homeView = makeHomeView();
+    renderView(homeView);
 }
-sendText();
+init();

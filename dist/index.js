@@ -1,9 +1,8 @@
-"use strict";
-function sendText() {
-    const element = document.getElementById("text");
-    if (element) {
-        element.textContent = "Welcome to my website";
-    }
+import { makeHomeView } from "./views/home.view";
+import { renderView } from "./views/view.utils";
+function init() {
+    const homeView = makeHomeView();
+    renderView(homeView);
 }
-sendText();
+init();
 //# sourceMappingURL=index.js.map
