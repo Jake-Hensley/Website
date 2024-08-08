@@ -6,7 +6,7 @@ type NavItem = [label: string, viewFn: Function];
 
 const NAV_ITEMS: NavItem[] = [
     ["Home", makeHomeView],
-    ["About this site", makeAboutView]
+    ["About", makeAboutView]
 ];
 
 export function makeNavView() {
@@ -22,7 +22,7 @@ export function makeNavLink(label: string, viewFn: Function) {
     const link = document.createElement("a");
     link.textContent = label;
     link.addEventListener("click", handleNavClick(viewFn));
-    link.setAttribute("style", "padding: 2px; text-decoration: bold;");
+    link.setAttribute("style", "padding: 2px; text-decoration: underline; cursor: pointer");
 
     return link;
 }

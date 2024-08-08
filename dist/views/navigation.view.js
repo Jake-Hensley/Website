@@ -3,7 +3,7 @@ import { makeHomeView } from "./home.view.js";
 import { renderView } from "./view.utils.js";
 const NAV_ITEMS = [
     ["Home", makeHomeView],
-    ["About this site", makeAboutView]
+    ["About", makeAboutView]
 ];
 export function makeNavView() {
     const wrapper = document.createElement("div");
@@ -17,7 +17,7 @@ export function makeNavLink(label, viewFn) {
     const link = document.createElement("a");
     link.textContent = label;
     link.addEventListener("click", handleNavClick(viewFn));
-    link.setAttribute("style", "padding: 2px; text-decoration: bold;");
+    link.setAttribute("style", "padding: 2px; text-decoration: underline; cursor: pointer");
     return link;
 }
 export function handleNavClick(viewFn) {
