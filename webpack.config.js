@@ -27,5 +27,9 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './public/index.html',
     }),
-  ]
+  ],
+  devServer: {
+    contentBase: './dist',
+  },
+  mode: "development",
 };
