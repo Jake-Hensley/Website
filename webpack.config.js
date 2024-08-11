@@ -1,4 +1,3 @@
-const { timeStamp } = require('console');
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -32,4 +31,5 @@ module.exports = {
     contentBase: './dist',
   },
   mode: "development",
+  devtool: "inline-source-map",
 };
