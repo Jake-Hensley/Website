@@ -6,6 +6,9 @@ Github flow:
 To compile type script: 
     npm run build
 
+Once webpack is installed you must run index.html from the dist folder
+    npx webpack
+
 Basic view creator:
 
     export function makeView() {

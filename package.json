@@ -2,12 +2,13 @@
   "name": "website-ui",
   "version": "1.0.0",
   "description": "Trying to make my first website",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "run-s build:clean type webpack",
     "build:clean": "rimraf ./dist",
     "type": "tsc --noEmit",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "test":"echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
