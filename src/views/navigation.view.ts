@@ -1,7 +1,7 @@
-import { makeAboutView } from "./about.view.js";
-import { makeAuthorView } from "./author.view.js";
-import { makeHomeView } from "./home.view.js";
-import { renderView } from "./view.utils.js";
+import { makeAboutView } from "./about.view";
+import { makeAuthorView } from "./author.view";
+import { makeHomeView } from "./home.view";
+import { renderView } from "./view.utils";
 
 type NavItem = [label: string, viewFn: Function];
 
@@ -25,7 +25,9 @@ export function makeNavLink(label: string, viewFn: Function) {
     const link = document.createElement("a");
     link.textContent = label;
     link.addEventListener("click", handleNavClick(viewFn));
-    link.setAttribute("style", "padding: 2px; text-decoration: bold; cursor: pointer");
+    link.setAttribute("style", "padding: 5px; text-decoration: underline; cursor: pointer");
+    link.style.fontSize = "25px";
+    link.style.border = "3px solid black";
 
     return link;
 }
