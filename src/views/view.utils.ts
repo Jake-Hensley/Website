@@ -22,6 +22,8 @@ export function makeSpan(text: string) {
 
 export function renderView(view: HTMLElement) {
     const wrapper = clearMainWrapper();
+    view.style.margin = "20px";
+    view.style.padding = "5px";
     wrapper?.appendChild(view);
 }
 
