@@ -22,9 +22,9 @@ export function makeSpan(text: string) {
 
 export function renderView(view: HTMLElement) {
     const wrapper = clearMainWrapper();
-    view.style.margin = "20px";
-    view.style.padding = "5px";
-    wrapper?.appendChild(view);
+    view.style.background = "white";
+    const finalView = universalStyle(view);
+    wrapper?.appendChild(finalView);
 }
 
 function clearMainWrapper() {
@@ -34,4 +34,12 @@ function clearMainWrapper() {
 
     });
     return wrapper;
+}
+export function universalStyle(view: HTMLElement) {
+    view.style.fontFamily = "Trebuchet MS";
+    view.style.margin = "20px";
+    view.style.padding = "5px";
+    view.style.width = "max-content";
+    
+    return view;
 }

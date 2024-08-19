@@ -1,7 +1,7 @@
 import { makeAboutView } from "./about.view";
 import { makeAuthorView } from "./author.view";
 import { makeHomeView } from "./home.view";
-import { renderView } from "./view.utils";
+import { renderView, universalStyle } from "./view.utils";
 
 type NavItem = [label: string, viewFn: Function];
 
@@ -19,15 +19,18 @@ export function makeNavView() {
         const navLink = makeNavLink(...navItem);
         wrapper.appendChild(navLink);
     });
+    universalStyle(wrapper);
     return wrapper;
 }
 export function makeNavLink(label: string, viewFn: Function) {
     const link = document.createElement("a");
     link.textContent = label;
     link.addEventListener("click", handleNavClick(viewFn));
-    link.setAttribute("style", "padding: 5px; text-decoration: underline; cursor: pointer");
+    universalStyle(link);
+    link.style.margin = "2px";
+    link.style.cursor = "pointer";
     link.style.fontSize = "25px";
-    link.style.border = "3px solid black";
+    link.style.background = "white";
 
     return link;
 }
